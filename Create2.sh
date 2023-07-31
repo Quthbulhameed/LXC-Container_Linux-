@@ -1,5 +1,7 @@
 #!/bin/bash
 
+
+
 # Create 2 LXC containers
 for i in {1..2}; do
   lxc-create -n container"$i" -t download -- --dist ubuntu --release bionic --arch amd64
